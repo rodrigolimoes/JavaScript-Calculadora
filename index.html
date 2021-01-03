@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>calculadora</title>
+</head>
+
+<body>
+    <div class="calculadora">
+        <div class="visor">
+            <div class="historico" id="historico"></div>
+            <div class="atual" id="atual"></div>
+        </div>
+        <div class="numeros">
+            <input onclick="clearelementos('c')" type="button" value="C">
+            <input onclick="clearelementos('ce')" type="button" value="CE">
+            <input onclick="addOperacao('+')" type="button" value="+">
+            <input onclick="addNumero(7)" type="button" value="7">
+            <input onclick="addNumero(8)" type="button" value="8">
+            <input onclick="addNumero(9)" type="button" value="9">
+            <input onclick="addOperacao('-')" type="button" value="-">
+            <input onclick="addNumero(4)" type="button" value="4">
+            <input onclick="addNumero(5)" type="button" value="5">
+            <input onclick="addNumero(6)" type="button" value="6">
+            <input onclick="addOperacao('/')" type="button" value="/">
+            <input onclick="addNumero(1)" type="button" value="1">
+            <input onclick="addNumero(2)" type="button" value="2">
+            <input onclick="addNumero(3)" type="button" value="3">
+            <input onclick="addOperacao('*')" type="button" class="multiplicacao" value="*">
+            <input onclick="addNumero(0)" type="button" value="0">
+            <input onclick="calculate(conta[0],conta[1],conta[2])" id="calculo" type="button" value="=">
+        </div>
+    </div>
+    <script src="/js/calc.js"></script>
+</body>
+
+</html>

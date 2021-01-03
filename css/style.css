@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: lightblue;
+}
+
+.calculadora{
+    background-color: rgb(32, 30, 30);
+    border: solid 2px black;
+    border-radius: 3px;
+    margin: 90px auto;
+    width: 250px;
+    height: 550px;
+
+}
+.visor{
+    color: white;
+    background-color:  rgb(44, 41, 41);
+    height: 150px;
+    margin:5px;
+}
+.historico{
+    max-height:70px;
+    font-size: 1.2em;
+    text-align: right;
+    overflow: hidden;
+}
+.atual{
+    text-align: right;
+    overflow: hidden;
+    font-size: 1.7em;
+    margin: 40px 0;
+}
+.numeros{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+.numeros input{
+    border:solid 2px black;
+    font-size: 1.3em;
+    text-align: center;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    width: 50px;
+    margin: 0px 1px; 
+    height: 50px;   
+}
+input:nth-child(10){
+    height: 50px;
+    width: 50px;
+}
+input:nth-child(1),
+input:nth-child(2){
+    width: 80px;
+    background-color: rgb(28, 133, 28);
+}
+input:nth-child(3){
+background-color: blueviolet;
+}
+input:nth-child(7){
+    background-color: yellowgreen;
+    }
+input:nth-child(11){
+      background-color: rgb(175, 66, 39);
+}
+ input:nth-child(15){
+ background-color: rgb(92, 27, 197);
+ }
+input:nth-child(17){
+    width: 40%;
+    background-color: rgb(238, 144, 20);
+}
+input:nth-child(16){
+    width: 40%;
+}
+input:hover{
+    border:solid 2px lightblue;
+}
+
